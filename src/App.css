@@ -1,0 +1,19 @@
+.Top-page{
+    background-image: url("./images/page.jpg");
+    background-size: cover;
+    height:90vh ;
+    padding: 25px;
+    overflow: hidden;
+
+}
+#titre_page{
+
+  font-family: Snell Roundhand, cursive;
+  font-size: 8vw;
+  color:beige;
+  text-align: center;
+ 
+
+
+}
+

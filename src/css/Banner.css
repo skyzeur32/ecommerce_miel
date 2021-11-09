@@ -1,0 +1,52 @@
+#recherche{
+    float:right;
+}
+.Menu{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+
+
+     /*background: crimson;*/
+      
+}
+.btn-menu   {
+    text-decoration: none;
+    padding: 10px 30px;
+    background-color: orange; 
+    color: white;
+    border: 1px solid orange;
+    border-style:inset;
+    }
+.btn-menu
+{
+   
+border-radius: 12px;
+border: 2px solid orange;
+width: 20vh;
+height: 7.2vh;
+margin : 3vh;
+overflow: hidden;
+flex-shrink: 0;
+font-size: 4vh;
+
+text-align:center;
+
+}
+.lien_menu{
+    text-decoration: none;  
+    color:beige
+}
+.btn-menu:hover {
+background-color:rgb(176,137,92);
+
+}
+#best_v{
+    font-size: 4vh;
+    line-height: 3.4vh;
+    
+}
+
+
+

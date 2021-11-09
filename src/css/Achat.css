@@ -1,0 +1,142 @@
+.Achat{
+    background-image: url("../images/page.jpg");
+}
+.other_images{
+    display: flex;
+   flex-direction: column;
+   border: 3px solid orange; 
+    width: 160px;
+    border-radius: 20px;
+
+}
+#img_1{
+
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    width: 160px;
+    background-image: url("../images/p1.jpg");
+}
+#img_2{
+    display: flex;
+    margin-top: 1px;
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    width: 160px;
+    background-image: url("../images/p1.jpg");
+}
+#img_3{
+    margin-top: 1px;
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    height: 170px;
+    width: 160px;
+    background-image: url("../images/p1.jpg");
+}
+.o_img{
+    opacity: 0.65;
+    border-radius: 17px;
+}
+.o_img:hover{
+    opacity: 1
+}
+.container{
+    background-color:beige;
+    display: flex;
+    padding: 30px;
+    border-radius: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.miel-achat{
+    display: flex;
+    background-size: cover;
+    background-position: center;
+    margin-left: 60px;
+    background-image: url("../images/p1.jpg");
+    min-width: 50vh;
+    min-height: 70vh;
+    border-radius: 20px;
+
+    
+}
+.right{
+ 
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+
+    margin-left: 60px;
+    
+}
+.description{
+ 
+    width: 560px;
+    height: 36vh;
+    padding: 20px;
+
+}
+.prix_total{
+    border-top-width: 10em;
+    border-top-color: brown;
+    margin-left: 16px;
+    height: 45px;
+    border-top: 1px solid brown; 
+
+}
+.interaction{
+    margin: none;
+
+    
+    display: flex;
+    flex-direction: column;
+
+    height: 157px;
+
+}
+.size_and_quantity{
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 25px;
+    padding-left: 25px;
+    padding-bottom: 10px;
+    margin-bottom: 2vh;
+}
+.add_and_achat{
+    display: flex;
+    justify-content: space-between;
+
+    padding-right: 12vh;
+    padding-left: 12vh;
+}
+#add_panier{
+    height: 45px;
+    width: 180px;
+    color:wheat;
+    background-color: green;
+    border-radius: 25px;
+}
+#add_panier:hover{
+    background-color: grey;
+}
+#buy_direct{
+    height: 45px;
+    width: 180px;
+    color:wheat;
+    background-color: rgb(128, 47, 0);
+    border-radius: 25px;
+}
+#buy_direct:hover{
+    background-color: grey;
+}
+.select_interaction{
+    width: 150px;
+}
+footer{
+    height: 8vh;
+    background-image: url("../images/page.jpg");
+}

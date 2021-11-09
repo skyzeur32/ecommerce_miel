@@ -1,0 +1,99 @@
+.Filtre_Saveur{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 35px;
+    background-color:rgb(210,105,30,0.7);
+    background-image: url("../images/fond.png");
+}
+.Filtre_Texture{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 35px;
+    background-color:rgb(210,105,30,0.7);
+    background-image: url("../images/fond.png");
+    padding-left: 180px;
+    padding-right: 180px;
+}
+.Saveur{
+    background-size: cover;
+    background-color:beige;
+    min-width: 220px;
+    min-height: 180px;
+    position: relative;
+    transition: transform .2s;
+    
+}
+.r1{
+    margin-bottom: 45px;
+}
+
+.s{
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    background-size: cover;
+
+    min-width: 30vh;
+    min-height: 18vh;
+   
+    
+
+}
+.s1{
+    
+    background-image: url("../images/Couleur/orange.JPG");
+}
+.s2{
+    background-image: url("../images/Couleur/jaune.JPG");
+    
+}
+.s3{
+    background-image: url("../images/Couleur/beige.JPG");
+}
+
+.Saveur:hover{
+    transform: scale(1.15);
+}
+.Acacia{
+    
+    background-image: url("../images/Tous/p1.png");
+}
+.Sapin{
+    background-image: url("../images/Tous/p2.jpg");
+    
+}
+.Thym{
+    background-image: url("../images/Tous/p3.jpg");
+}
+.Noisette{
+    background-image: url("../images/Tous/p3.jpg");
+}
+.select-selected {
+    background-color: DodgerBlue;
+  }
+
+.miel{
+    background-size: cover;
+    background-position: center;
+
+
+    min-width: 250px;
+    min-height: 400px;
+    position: relative;
+    transition: transform .2s;
+    
+}
+.miel:hover{
+    transform: scale(1.15);
+    cursor: pointer;
+}
