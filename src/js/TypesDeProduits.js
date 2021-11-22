@@ -1,32 +1,28 @@
 import '../css/BestVentes.css';
-import MielList from '../data/MielList'
+import TypeProduits from '../data/TypeProduits'
 import Card from './Card';
+import { Link } from 'react-router-dom';
+function TypesDeProduits() {
 
-function BestVentes() {
-   const BestMielList = MielList.filter(function (miel) {
-    return miel.isBestSale === true
-  });
   return (
     <div >
-        <section id="best" class="Meilleurs-ventes">
+        <section  className="types">
           <div class="container py-5">
 
           <div class="row py-5 m-auto">
               <div class="col-lg-5">
-                <h1>Meilleures ventes</h1>
+                <h1 id="titre_types">Nos types de Produits</h1>
                 
               </div>
             </div>
 
             <div class="row">
               
-              {BestMielList.map((infos) => (
+              {TypeProduits.map((infos) => (
 				        <Card infos = {infos}/>
                 
 				        ))}
-     
-
-         
+    
             </div>
 
           </div>
@@ -39,4 +35,4 @@ function BestVentes() {
   );
 }
 
-export default BestVentes;
+export default TypesDeProduits;

@@ -1,52 +1,53 @@
-#recherche{
-    float:right;
+@import url('https://fonts.googleapis.com/css2?family=Dongle&display=swap');    
+.navbar-brand{
+    font-size:2rem;
+    color:#de6300;
 }
-.Menu{
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    width: 100%;
-
-
-     /*background: crimson;*/
-      
+.navbar-brand:hover{
+    color:#9c8fc5;
 }
-.btn-menu   {
-    text-decoration: none;
-    padding: 10px 30px;
-    background-color: orange; 
-    color: white;
-    border: 1px solid orange;
-    border-style:inset;
-    }
-.btn-menu
-{
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    text-transform: uppercase;
    
-border-radius: 12px;
-border: 2px solid orange;
-width: 20vh;
-height: 7.2vh;
-margin : 3vh;
-overflow: hidden;
-flex-shrink: 0;
-font-size: 4vh;
-
-text-align:center;
-
 }
-.lien_menu{
-    text-decoration: none;  
-    color:beige
-}
-.btn-menu:hover {
-background-color:rgb(176,137,92);
 
+
+.container{
+    background-color: white;
 }
-#best_v{
-    font-size: 4vh;
-    line-height: 3.4vh;
+.search{
+    height :40px;
+    width: 160px;
+    border-radius: 60px;
+    outline: none;
+    border: 2px solid #de6300;;
+}
+.btn0{
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background-color:#de6300;
+    color:white;
+    border-radius: 60px;
+    font-weight: 700;
+    margin-left: 5px;
+}
+.btn0:hover{
+    background-color: #9c8fc5;;
+}
+
+
+#sous_shop{
+    display: none;
+    background-color: #9c8fc5;
+}
+
+li:hover #sous_shop{
+    display: flex;
+    position: absolute;
     
 }
-
-
-

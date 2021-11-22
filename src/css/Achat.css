@@ -1,4 +1,4 @@
-.Achat{
+.Achat1{
     background-image: url("../images/page.jpg");
 }
 .other_images{
@@ -43,14 +43,7 @@
 .o_img:hover{
     opacity: 1
 }
-.container{
-    background-color:beige;
-    display: flex;
-    padding: 30px;
-    border-radius: 25px;
-    margin-left: 20px;
-    margin-right: 20px;
-}
+
 .miel-achat{
     display: flex;
     background-size: cover;

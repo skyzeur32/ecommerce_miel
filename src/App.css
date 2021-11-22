@@ -1,19 +1,122 @@
-.Top-page{
-    background-image: url("./images/page.jpg");
-    background-size: cover;
-    height:90vh ;
-    padding: 25px;
-    overflow: hidden;
+.main{
+  background-image:url("./images/cosmetic1.jpg");
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.main h1{
+  font-size: 4rem;
+  font-weight: 700;
+  font-family: 'robot';
+  
+  color:#9c8fc5;
+  
+}
+
+.main h1:hover{
+  color:#cc6410;
+}
+#titre_types{
+  color:#9c8fc5;
+}
+#titre_types:hover{
+  color:#cc6410;
+}
+.btn1{
+  height: 35px;
+  width: 35%;
+  border:none;
+  outline: none;
+  background-color:#de6300;
+  color:white;
+  font-weight: 700;
+  border-radius: 60px;
+}
+.btn1:hover{
+  background-color:#9c8fc5;
+}
+
+.libelle_check{
+  display: flex;
+  flex-direction: row;
 
 }
-#titre_page{
+.input{
+  margin-right: 5px;
+}
 
-  font-family: Snell Roundhand, cursive;
-  font-size: 8vw;
-  color:beige;
-  text-align: center;
+#price{
+  margin-top: 10px;
+}
+
+
+#carouselExemple {
+  width: 50%;
+  margin: 0 auto;
+  margin-top: 120px;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+}
+
+.slider {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  background-size: cover;
+  height: 100vh;
+  background-position: 50% 50%;
+  width: 100%;
+}
+
+.right-arrow {
+  position: absolute;
+  top: 50%;
+  right: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.left-arrow {
+  position: absolute;
+  top: 50%;
+  left: 32px;
+  font-size: 3rem;
+  color: #000;
+  z-index: 10;
+  cursor: pointer;
+  user-select: none;
+}
+
+.slide {
+  opacity: 0;
+  transition-duration: 6s ease;
+}
+
+.slide.active {
+  opacity: 1;
+  transition-duration: 4s;
+  transform: scale(1);
+}
+
+.conteneur_slider{
  
-
-
-}
-
+  position:absolute;
+  top:360px;
+  width:600px;
+  height:400px;
+  z-index:2;
+  font-size:200%
+  }

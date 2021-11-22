@@ -1,0 +1,11 @@
+.type{
+    background-size: cover;
+    background-position: center;
+    
+    background-image: url("../images/p1.jpg");
+    min-width: 35vh;
+    min-height: 60vh;
+    position: relative;
+    transition: transform .2s;
+    border-radius: 20px;
+}
