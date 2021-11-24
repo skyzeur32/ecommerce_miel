@@ -1,3 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dancing+Script&family=Lobster&family=Oswald&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Berkshire+Swash&family=Dancing+Script&family=Lobster&family=Oswald&display=swap');
+h1{
+    font-family: 'Berkshire Swash', cursive;
+    color:#9c8fc5c7;
+}
+h3{
+    font-family: 'Berkshire Swash', cursive;
+    color:#9c8fc5c7;
+}
+h2{
+    font-family: 'Berkshire Swash', cursive;
+    color:#9c8fc5c7;
+}
+h5{
+    font-family: 'Berkshire Swash', cursive;
+    color:#9c8fc5c7;
+}
 #Filtre_textures{
     margin-top: 20px;
 }

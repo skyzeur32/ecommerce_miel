@@ -4,6 +4,7 @@ import styled from 'styled-components'
 import {addToCart} from '../lib/redux/reducers/index'
 import {useDispatch} from 'react-redux'
 import '../App.css'
+import $ from 'jquery';
 const CardImage = styled.img`
 height: 200px;
 width: 200px;
@@ -20,7 +21,10 @@ function CardShop(props) {
   const dispatch = useDispatch();
   const [details,setDetails] = useState({quantity :1, size:'small'});
   const product = props.infos;
+  const [show, setShow] = useState(false);
+
   const addCart = () => {
+    
     const item = {id:product.id,name:product.name,price : product.price_small,img:product.img};
     dispatch(addToCart({...item, ...details}));
       console.log(item);
@@ -34,7 +38,7 @@ function CardShop(props) {
                 pathname: "/product",
                 props:  props.infos ,
               }}
-              className=" font-weight-bold text-dark text-uppercase small"
+              className=" font-weight-bold text-dark "
             >
               <h3>{props.infos.name}</h3>
             </Link>

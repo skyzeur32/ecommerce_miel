@@ -3,20 +3,29 @@ import '../../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 import {useSelector} from 'react-redux'
-
+import { FontAwesomeIcon } from '@fortawesome/fontawesome-free'
+import CloseIcon from '@mui/icons-material/Close';
 function CartDropdown({ show, handleOnClick }) {
   const items = useSelector((state)=> state.items);
-
+  var nbr_articles = 0;
   var prix_total = 0;
   items.map(item => {
     prix_total+=item.price*item.quantity;
+    nbr_articles+=Number(item.quantity);
     console.log(item.price);
   });
+  
 	return(
 	<div onClick={handleOnClick} className={`dropdown-menu dropdown-menu-right p-3 ${show && 'show'}`} aria-labelledby="dropdownCart" style={{minWidth:'300px'}}>
-	<div className="d-flex justify-content-between"> 
-		<span>0</span>
-		<span className="emphasis">{prix_total}</span>
+  <div className="d-flex justify-content-between"> 
+    <h3>Votre Panier</h3>
+    <a href="#" class="close"></a>
+    <CloseIcon className="close"></CloseIcon>
+  </div>
+  <div className="dropdown-divider"></div>
+  <div className="d-flex justify-content-between"> 
+		<span>{nbr_articles} articles</span>
+		<span className="emphasis">{prix_total} €</span>
 	</div>
 	<div className="dropdown-divider"></div>
 	<ul className="shopping-cart-items pt-2 pl-0" aria-labelledby="dropdownCart">
@@ -38,7 +47,7 @@ function CartDropdown({ show, handleOnClick }) {
 			</li>)
 		})}
 	</ul>
-	<Link to='/cart'  className="btn btn-md btn-block btn-orange mt-3" style={{margin: 0}}>view cart</Link>	
+	<Link to='/cart' class="btn btn-success" >Commander</Link>	
 </div>)
 }
 function Banner() {
@@ -55,13 +64,13 @@ function Banner() {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0" id="menu-demo2">
         <li class="nav-item">
-          <a class="nav-link"  href="#">Accueil</a>
+          <a class="nav-link"  href="#" id="a">Accueil</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Présentation</a>
+          <a class="nav-link" href="#" id="p">Présentation</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">
+          <a class="nav-link" href="#" id="s">
             Shop
           </a>
           <ul class="navbar-nav me-auto mb-2 mb-lg-0"id="sous_shop">
@@ -73,12 +82,13 @@ function Banner() {
 
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#" id="c">Contact</a>
         </li>
         <button onClick={() => setShow(!show)}>Panier</button>
+        
       <li className="nav-item dropdown"  >
     
-          <CartDropdown show={show} handleOnClick={handleOnClick}/>
+          <CartDropdown show={show} id="panier" handleOnClick={handleOnClick}/>
 		   </li>
       </ul>
   

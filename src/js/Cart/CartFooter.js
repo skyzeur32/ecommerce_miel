@@ -9,11 +9,12 @@ const styles = {
 }
   
 function CartFooter() {
+  var somme_Total = 0;
     return(
       <>
        <div className="text-right mb-4">
-          <h4>Subtotal:</h4>
-          <h1>€0.00</h1>
+          <h4>Prix Total :</h4>
+          <h1>{somme_Total} €</h1>
         </div>  
         <div className="d-flex justify-content-between">
         <Link  to="/">

@@ -14,7 +14,35 @@
    
 }
 
-
+#a{
+    color:#9c8fc5c7;
+    font-size: 18px;
+}
+#p{
+    color:#9c8fc5c7;
+    font-size: 18px;
+}
+#s{
+    color:#9c8fc5c7;
+    font-size: 18px;
+}
+#c{
+    color:#9c8fc5c7;
+    font-size: 18px;
+    
+}
+#a:hover{
+    color:#de6300;
+}
+#p:hover{
+    color:#de6300;
+}
+#s:hover{
+    color:#de6300;
+}
+#c:hover{
+    color:#de6300;
+}
 .container{
     background-color: white;
 }
@@ -51,3 +79,11 @@ li:hover #sous_shop{
     position: absolute;
     
 }
+.close{
+    opacity: 0.3;
+}
+  
+.close:hover{
+    opacity: 1;
+}
+  

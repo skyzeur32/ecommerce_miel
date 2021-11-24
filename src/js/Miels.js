@@ -8,6 +8,7 @@ import CardShop from './CardShop';
 import MielList from '../data/MielList'
 import Filter from './Filter';
 import DrapeauList from '../data/DrapeauList';
+
 function Miels(props) {
   const [filtre, updateFiltre] = useState("Pays");
   const [sliderValue,setSliderValue]=useState(10);

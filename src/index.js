@@ -10,7 +10,7 @@ import Shop from './js/Huile';
 import Miels from './js/Miels';
 import Huile from './js/Huile';
 import Product from './js/Product'
-
+import Cart from './js/Cart'
 
 ReactDOM.render(
   <React.StrictMode>
@@ -26,7 +26,7 @@ ReactDOM.render(
       <Route path="/Shop_Miels" render={(props) => <Miels {...props} />} />
       <Route path="/Shop_Huiles" render={(props) => <Huile {...props} />} />
       <Route path="/product" render={(props) => <Product {...props} />} />
-      
+      <Route path="/Cart" render={(props) => <Cart  />} />
 
     </Router>
     </Provider>
