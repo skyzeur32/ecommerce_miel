@@ -112,3 +112,17 @@ li:hover #sous_shop{
 
 .menu{display: flex;
 flex-direction: row;}
+
+#separateur{
+    margin-bottom: 20px;
+}
+#delete{
+    color:#9c8fc5;
+}
+#delete:hover{
+    color:#de6300;
+}
+
+li:hover{
+    color:#9c8fc5;
+}

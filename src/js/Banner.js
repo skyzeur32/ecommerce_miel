@@ -8,7 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/fontawesome-free'
 import CloseIcon from '@mui/icons-material/Close';
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useEffect} from 'react'
-import {upadateCart} from '../lib/redux/reducers'
+import {removeCart, upadateCart} from '../lib/redux/reducers'
+import Delete from '@mui/icons-material/Delete';
 
 function CartDropdown({ show, handleOnClick }) {
   const items = useSelector((state)=> state.items);
@@ -34,12 +35,13 @@ function CartDropdown({ show, handleOnClick }) {
 		<span>{nbr_articles} articles</span>
 		<span className="emphasis">{prix_total} €</span>
 	</div>
-	<div className="dropdown-divider"></div>
-  <ul className="shopping-cart-items pt-2 pl-0" aria-labelledby="dropdownCart">
+	<div className="dropdown-divider" id="separateur"></div>
+  
+    
   {items.map(item => {
     return(<Ligne_Panier item={item}/>);
   })}
-    </ul>
+    
   <br/>
 	<Link to='/cart' class="btn btn-success" >Commander</Link>	
 </div>)
@@ -49,6 +51,8 @@ function Ligne_Panier(props){
  const item = props.item;
  const dispatch = useDispatch();
  const handleOnChange = (e) => dispatch(upadateCart(item.id,e.target.value));
+
+ const handleOnClick2 = () => dispatch(removeCart(item.id));
   return(
 
     
@@ -71,6 +75,7 @@ function Ligne_Panier(props){
     
       <input type="number" id="p_q" value={item.quantity} onChange={handleOnChange} /> x
       <span> {item.price} €</span> = {item.quantity*item.price} €
+      <Delete onClick={handleOnClick2}  id="delete" />
       </div>
     </li>
   );
@@ -147,17 +152,17 @@ export default function Navbar() {
     <nav>
       {(toggleMenu || screenWidth > 500) && (
       <ul className="list">
-      <li className="items">Accueil</li>
-      <li className="items">Présentation</li>
-      <li className="items">Shop</li>
-      <li className="items">Contact</li>
+     <Link style={{textDecoration:'none'}} to="/"> <li className="items">Accueil</li></Link>
+     <Link style={{textDecoration:'none'}} to="/"> <li className="items">Présentation</li></Link>
+     <Link style={{textDecoration:'none'}} to="/Shop_Miels">  <li className="items">Shop</li></Link>
+     <Link style={{textDecoration:'none'}} to="/"> <li className="items">Contact</li></Link>
       <button onClick={toggleNav} className="caca">BTN</button>
       <ShoppingCartIcon id="shop_cart" className="icon" fontSize="large" onClick={() => setShow(!show)}></ShoppingCartIcon>
         <h5 id="nbr_articles">{nbr_articles}</h5>
         
         
       <div className="nav-item dropdown"  >
-    
+
           <CartDropdown show={show} id="panier" handleOnClick={handleOnClick}/>
 		   </div>
     </ul>

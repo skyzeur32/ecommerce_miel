@@ -5,6 +5,7 @@ function reducer(state = {items : []},action){
 
     switch (action.type){
         case "ADD_TO_CART":
+            
         return {
             items: [...state.items, action.payload.item]
         };
@@ -19,6 +20,11 @@ function reducer(state = {items : []},action){
                 return item;
             })
         }
+
+        case "REMOVE_FROM_CART_PANIER":
+            return{
+                items: state.items.filter((item)=> item.id !==  action.payload.id && item )
+            }
 
         default: return state
     }
@@ -39,6 +45,12 @@ export function upadateCart(id,quantity){
     };
 }
 
+export function removeCart(id){
+    return {
+        type:"REMOVE_FROM_CART_PANIER",
+        payload : {id},
+    };
+}
 
  export const store = createStore(
     reducer,

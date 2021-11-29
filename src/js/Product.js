@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from "react-router-dom";
-import {addToCart} from '../lib/redux/reducers/index'
+import {addToCart, upadateCart} from '../lib/redux/reducers/index'
 import {useDispatch} from 'react-redux'
 import Banner from './Banner';
 import '../css/Product.css'
@@ -42,7 +42,8 @@ const [prix_total_pot, updatePrixTotalPot] = useState(prix_small);
   }
   const addCart = () => {
   const item = {id:product.id,name:product.name,price : product.price_small, img:product.img};
-  dispatch(addToCart({...item, ...details}));
+  if(1==1)  dispatch(addToCart({...item, ...details}));
+  else dispatch(upadateCart(item.id,product.quantity));
     console.log(item);
   };
   const handleOnChange = e => setDetails((prevState) =>({
