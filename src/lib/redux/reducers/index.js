@@ -9,6 +9,17 @@ function reducer(state = {items : []},action){
             items: [...state.items, action.payload.item]
         };
 
+        case "UPDATE_CART" : 
+        return{
+            items: state.items.map(item => {
+                if(item.id === action.payload.id){
+                    item.quantity = action.payload.quantity;
+                    return item;
+                }
+                return item;
+            })
+        }
+
         default: return state
     }
 }
@@ -18,6 +29,13 @@ export function addToCart(item){
     return {
         type:"ADD_TO_CART",
         payload: {item},
+    };
+}
+export function upadateCart(id,quantity){
+    
+    return {
+        type:"UPDATE_CART",
+        payload: {id,quantity},
     };
 }
 

@@ -48,14 +48,14 @@
 }
 .search{
     height :40px;
-    width: 160px;
+    width: 360px;
     border-radius: 60px;
     outline: none;
     border: 2px solid #de6300;;
 }
 .btn0{
     height: 40px;
-    width: 40%;
+    width: 30%;
     outline: none;
     border: none;
     background-color:#de6300;
@@ -79,11 +79,36 @@ li:hover #sous_shop{
     position: absolute;
     
 }
-.close{
-    opacity: 0.3;
+.icon{
+    opacity: 1;
+   color: #f1f1f1;
+
 }
   
-.close:hover{
+.icon:hover{
+    opacity: 1;
+    color:#9c8fc5;
+}
+#croix{
+    color:#9c8fc5;
+    opacity: 0.7;
+}
+#croix:hover{
+    color:#de6300;
     opacity: 1;
 }
-  
+#p_q{
+    width: 50px;
+}
+#name_panier{
+    color:black;
+}
+#name_panier:hover{
+    opacity: 0.7;
+}
+#img_panier:hover{
+    opacity: 0.7;
+}
+
+.menu{display: flex;
+flex-direction: row;}

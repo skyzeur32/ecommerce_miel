@@ -15,16 +15,21 @@ function Cart() {
     console.log(item.price);
   });
   return (
+    <section className="pt-5">
     <Table heading="Mon panier" subheading={"Vous avez " + nbr_articles + " articles dans votre panier"}>
-      <tbody> 
+      <tbody>
+        {items.map(item => (
+          <Row produit={item} />)
+        )}
 
-    {items.map(item=>(
-      <Row {...items}/>)
-      )}
       </tbody>
 
-      <CartFooter />
+
     </Table>
+    <div className="col-md-8 offset-2">
+    <CartFooter prix_total = {prix_total} />
+    </div>
+    </section>
   );
 }
 export default Cart;

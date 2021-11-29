@@ -12,7 +12,7 @@ function Card(props){
     margin-top:10px;
     transition: transform .2s;
     &:hover{
-        transform: scale(1.1);
+        transform: scale(1.08);
     }
     `
 console.log("OK une carte de plus");

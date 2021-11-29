@@ -81,7 +81,7 @@ console.log(category);
   }
 
   return  (
-    <><Banner /><div class="container py-2" id="container_miel">
+    <><Banner nombre = {0} /><div class="container py-2" id="container_miel">
 
       <h1>Bienvenue dans l'espace Miel</h1>
 

@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
+import '../../App.css'
 
 const styles = {
   disabled: {
@@ -8,22 +9,25 @@ const styles = {
   }
 }
   
-function CartFooter() {
-  var somme_Total = 0;
+function CartFooter(props) {
+
     return(
       <>
-       <div className="text-right mb-4">
-          <h4>Prix Total :</h4>
-          <h1>{somme_Total} €</h1>
-        </div>  
-        <div className="d-flex justify-content-between">
-        <Link  to="/">
-          <i className="fas fa-arrow-left mr-2"></i> Continue Shopping 
+        <div id="champs_Total">
+          <h3>Prix Total :</h3>
+          <h1>{props.prix_total} €</h1>
+          
+   
+        </div>
+        <div className="btn_Cart">
+        <Link  className="btn btn-primary btn-lg" to="/">
+           Retour à la boutique
         </Link>
-        <Link className="btn btn-primary mb-4 btn-lg pl-5 pr-5" to="/checkout">
-          Checkout
+        <Link className="btn btn-success btn-lg" to="/checkout">
+          Payer votre panier
         </Link>
-      </div>
+        </div>
+     
       </> 
     )
   }

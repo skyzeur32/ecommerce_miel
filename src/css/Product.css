@@ -6,3 +6,10 @@
 .lien:hover{
     color:black;
 }
+.prix_unite{
+   font-size: 42px;
+   color:#9c8fc5;
+}
+.prix_pot{
+    color:black;
+}

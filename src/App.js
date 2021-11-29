@@ -7,13 +7,14 @@ import Shop from './js/Huile';
 import TypesDeProduits from './js/TypesDeProduits';
 import Contact from './js/Contact';
 import SliderData from './js/SliderData';
+import Navbar from './js/Banner.js';
 
 function App() {
 
   return (
     
     <div >
-      <Banner/>
+      <Navbar/>
 
        
         <ImageSlider slides={SliderData}/>

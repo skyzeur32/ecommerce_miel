@@ -32,7 +32,7 @@ function CardShop(props) {
     return(
 
             <div class="col-lg-3 " >
-                <div class="card border-0 bg-light mb-2">
+                <div class="card border-0 bg-light mb-2" id="card">
                 <Link
               to={{
                 pathname: "/product",
@@ -41,10 +41,11 @@ function CardShop(props) {
               className=" font-weight-bold text-dark "
             >
               <h3>{props.infos.name}</h3>
-            </Link>
+            
                     
         
                     <CardImage  src={props.infos.img}/>
+            </Link>
                     <h5 id="price">A partir de {props.infos.price_small}€</h5>
                     <button type="button" class="btn btn-outline-dark" onClick={addCart} >AJOUTER AU PANIER</button>
                 </div>

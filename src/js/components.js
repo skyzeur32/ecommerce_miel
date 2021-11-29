@@ -1,7 +1,7 @@
 export function Table({children, items = [], heading, subheading}) {
     return(
-        <section className="pt-5 pb-5">
-            <div className="container">
+       
+          
                 <div className="row">
                     <div className="col-md-8 offset-2">
                     <h3 className="display-5 mb-2 text-center">{heading}</h3>
@@ -10,17 +10,17 @@ export function Table({children, items = [], heading, subheading}) {
                     <table id="shoppingCart" className="table table-condensed table-responsive">
                     <thead>
                         <tr>
-                            <th style={{width: '60%'}}>Product</th>
-                            <th style={{width: '12%'}}>Price</th>
-                            <th style={{width: '10%'}}>Quantity</th>
-                            <th style={{width: '16%'}}></th>
+                            <th style={{width: '40%'}}>Produit</th>
+                            <th style={{width: '20%'}}>Prix Unité</th>
+                            <th style={{width: '20%'}}>Quantité</th>
+                            <th style={{width: '20%'}}>Prix Total</th>
                         </tr>
                         </thead>
                         {children}
                     </table>  
                     </div>
                 </div>
-            </div>
-        </section>
+        
+       
     )
   }

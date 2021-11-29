@@ -4,6 +4,7 @@
   height: 100vh;
   background-position: 50% 50%;
   width: 100%;
+  overflow: hidden;
 }
 
 .main h1{
@@ -49,6 +50,7 @@
 
 #price{
   margin-top: 10px;
+
 }
 
 
@@ -120,3 +122,14 @@
   z-index:2;
   font-size:200%
   }
+
+  #champs_Total{
+    text-align: center;
+
+  }
+  .btn_Cart{
+    display: flex;
+    justify-content: space-around;
+  
+  }
+  
