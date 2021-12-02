@@ -13,3 +13,17 @@
 .prix_pot{
     color:black;
 }
+.autre{
+    margin-bottom: 20px;
+    height: 110px;
+    width: 200px;
+}
+.principal{
+    width: 500px;
+    height: 400px;
+}
+.autre:hover{
+    opacity: 0.5;
+   
+}
+

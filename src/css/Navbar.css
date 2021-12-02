@@ -40,7 +40,7 @@ nav {
 #nbr_articles{
     color:#f1f1f1;
 }
-@media screen and (max-width: 500px){
+@media screen and (max-width: 520px){
 
     .list {
         flex-direction: column;

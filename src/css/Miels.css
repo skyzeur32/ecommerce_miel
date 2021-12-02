@@ -36,3 +36,8 @@ h5{
 #card{
     border-radius: 15px;
 }
+@media screen and (max-width: 992px){
+#filtre{
+    display: none;
+}
+}

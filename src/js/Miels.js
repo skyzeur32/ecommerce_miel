@@ -86,7 +86,7 @@ console.log(category);
       <h1>Bienvenue dans l'espace Miel</h1>
 
       <div class="row">
-        <div class="col-lg-2" >
+        <div class="col-md-2 " >
         <div id="filtre">
             <div id="Filtre_pays">
           
@@ -114,7 +114,7 @@ console.log(category);
             </div>
           </div>
         </div>
-        <div class="col-lg-9" id="produit_miels">
+        <div class="col-md-9" id="produit_miels">
           <div class="row">
             {ChoixMielList.map((infos) => (
               
