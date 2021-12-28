@@ -42,7 +42,7 @@ function CardShop(props) {
 
     return(
 
-            <div class="col-lg-3 col-md-4 col-xs-6" >
+            <div class="col-lg-3 col-md-4 col-sm-6" >
                 <div class="card border-0 bg-light mb-2" id="card">
                 <Link
               to={{

@@ -10,6 +10,7 @@ import ShoppingCartIcon from '@mui/icons-material/ShoppingCart';
 import { useEffect} from 'react'
 import {removeCart, upadateCart} from '../lib/redux/reducers'
 import Delete from '@mui/icons-material/Delete';
+import GoogleBtn from './GoogleBtn';
 
 function CartDropdown({ show, handleOnClick }) {
   const items = useSelector((state)=> state.items);
@@ -156,6 +157,7 @@ export default function Navbar() {
      <Link style={{textDecoration:'none'}} to="/"> <li className="items">Présentation</li></Link>
      <Link style={{textDecoration:'none'}} to="/Shop_Miels">  <li className="items">Shop</li></Link>
      <Link style={{textDecoration:'none'}} to="/"> <li className="items">Contact</li></Link>
+     <GoogleBtn/>
       <button onClick={toggleNav} className="caca">BTN</button>
       <ShoppingCartIcon id="shop_cart" className="icon" fontSize="large" onClick={() => setShow(!show)}></ShoppingCartIcon>
         <h5 id="nbr_articles">{nbr_articles}</h5>
